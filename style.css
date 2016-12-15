@@ -1064,7 +1064,7 @@ button.dropdown-toggle {
 
 /* Toggle small menu and children on */
 .toggled-on ul,
-.children.toggled-on {
+.sub-menu.toggled-on {
 	display: block;
 }
 
@@ -1116,7 +1116,7 @@ button.dropdown-toggle {
 			li:hover > ul,
 				li:focus > ul {
 				display: block;
-			}	
+			}
 			*/
 	}
 }
@@ -1523,6 +1523,19 @@ button.dropdown-toggle {
 
 .comment-form .required {
 	color: #D54E21;
+}
+
+.pingback {
+	font-family: "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+}
+
+.pingback .comment-body {
+	padding: 1em 0;
+}
+
+.pingback a {
+	font-style: italic;
+	text-decoration: none;
 }
 
 /*--------------------------------------------------------------
