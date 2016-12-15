@@ -46,7 +46,8 @@
 	}
 }
 
-.entry-meta {
+.entry-meta,
+.entry-footer {
 	font-size: 90%;
 	
 	a {
@@ -96,4 +97,9 @@
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.entry-footer {
+	margin: 1.5em 0;
+	font-family: $font__sans;
 }

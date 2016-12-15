@@ -14,11 +14,6 @@ body {
 
 blockquote, q {
 	quotes: "" "";
-
-	&:before,
-	&:after {
-		content: "";
-	}
 }
 
 hr {
