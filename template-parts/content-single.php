@@ -26,6 +26,15 @@
 		<?php
 		endif; ?>
 	</header><!-- .entry-header -->
+	
+	<?php
+	if ( has_post_thumbnail() ) { ?>
+	<figure class="featured-image full-bleed">
+		<?php
+		the_post_thumbnail();
+		?>
+	</figure><!-- .featured-image full-bleed -->
+	<?php } ?>
 
 	<section class="post-content">
 		
