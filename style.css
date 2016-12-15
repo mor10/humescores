@@ -283,8 +283,10 @@ textarea {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	clear: both;
+	margin-top: .75em;
+	margin-bottom: .25em;
 	font-family: "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+	clear: both;
 }
 
 h1 {
