@@ -142,6 +142,36 @@
 	}	
 }
 
+/* Single Post Featured Images */
+/*
+.full-bleed {
+	width: 100vw;
+	max-height: 1200px;
+	margin-top: 1em;
+	margin-left: -1em;
+	border-top: 1px solid hsl(0, 0%, 90%);
+	border-bottom: 1px solid hsl(0, 0%, 90%);
+	overflow: hidden;
+	
+	@media screen and (min-width: $query__small) {
+		margin-left: -2em;
+	}
+	
+	@media screen and (min-width: $query__medium) {
+		margin-top: 1.5em;
+		margin-right: -2em;
+	}
+	
+	@media screen and (min-width: $size__max-width) {
+		margin-right: calc( ((-100vw + #{$size__max-width})/2) - 2em );
+		margin-left: calc( ((-100vw + #{$size__max-width})/2) - 2em );
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+*/
 
 .page-content,
 .entry-content,
