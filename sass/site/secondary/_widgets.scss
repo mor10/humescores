@@ -2,11 +2,22 @@
 	margin-top: 1.5em;
 }
 
+/* Footer widgets for archive pages */
+.archive-view {
+	@media screen and (min-width: $query__medium) {
+		&.has-sidebar {
+			.footer-widgets {
+				width: 100%;
+			}
+		}
+	}
+}
+
 .widget {
 	margin: 0 0 2em;
 	padding: 0 0 2em;
 	font-family: $font__sans;
-	
+
 	ul,
 	ol {
 		padding: .7em 0 0;
@@ -25,20 +36,20 @@
 					margin-left: 1em;
 				}
 			}
-			
+
 		}
 	}
-	
+
 	a {
 		font-weight: 600;
 		text-decoration: none;
-		
+
 		&:hover,
 		&:focus {
 			border-bottom: 3px solid $color__interactive;
 		}
 	}
-	
+
 	/* Make sure select elements fit in widgets. */
 	select {
 		width: 100%;
@@ -47,7 +58,7 @@
 		font-family: $font__sans;
 		border: 1px solid #ccc;
 	}
-	
+
 }
 
 .widget-title {
@@ -79,25 +90,25 @@
 
 .widget_pages,
 .widget_nav_menu {
-	
+
 	a {
 		display: block;
 		padding: 1em 0;
 		text-decoration: none;
 		border-bottom: 1px dashed hsl(0, 0%, 50%);
-		
+
 		&:hover,
 		&:focus {
 			text-decoration: none;
 			border-bottom: 1px dashed hsl(0, 0%, 50%);
 		}
 	}
-	
+
 	li {
 		padding: 0;
 
 	}
-	
+
 }
 
 
@@ -113,12 +124,12 @@
 		line-height: 1.3em;
 		padding-bottom: .5em;
 	}
-	
+
 	a:hover,
 	a:focus {
 		padding-left: 0;
 	}
-	
+
 }
 
 /* RSS widget */
@@ -156,23 +167,23 @@
 /* Calendar widget */
 .widget_calendar {
 	font-weight: 400;
-	
+
 	caption {
 		padding: .5em 0;
 		font-size: 1em;
 		font-weight: 500;
 		text-align: left;
 	}
-	
+
 	thead {
 		background: transparent;
 		color: black;
-		
+
 		th {
 			border-bottom-width: 2px;
 		}
 	}
-	
+
 	td {
 		padding: .2em;
 		font-size: .8em;
@@ -180,21 +191,21 @@
 		background: white;
 		border: 1px solid hsl(0, 0%, 80%);
 	}
-	
+
 	th {
 		border: none;
 		text-align: center;
 	}
-	
+
 	.pad {
 		background: #eaeaea;
 	}
-	
+
 	a {
 		font-weight: 900;
 		text-decoration: none;
 	}
-	
+
 }
 
 /* Text widget */
@@ -210,58 +221,57 @@
 	margin: 2em 0 0;
 	padding: 1em 0;
 	background-color: hsl(0, 0%, 10%);
-	
+
 	@media screen and (min-width: $query__small) {
 		padding: 2em 1em;
 	}
-	
+
 	.widget {
 		flex: 1;
 		margin: 0 1em 2em;
 		padding-top: 1em;
-		
+
 		.original-title {
 			color: hsla(0, 0%, 100%, .5);
 		}
 	}
-	
+
 	.widget,
 	.widget-title,
 	.widget a,
 	.widget_calendar thead,
-	.rss-date, 
+	.rss-date,
 	.widget_rss cite {
 		color: white;
 	}
-	
+
 	.widget_calendar td,
 	.widget_calendar a {
 		color: black;
 	}
-		
+
 	@media screen and (min-width: $query__medium) {
 		/* Use flex to create a responsive layout */
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
-		
+
 		/* If only one widget is displayed, make it full width. */
 		.widget:only-of-type {
 			width: 100%;
 		}
 
 		/* If 2 or 3 widgets are displayed, make the second one twice as wide. */
-		.widget:nth-last-child(n+2):nth-last-child(-n+3):first-child ~ .widget:nth-child(2) { 
+		.widget:nth-last-child(n+2):nth-last-child(-n+3):first-child ~ .widget:nth-child(2) {
 			flex: 2;
 		}
-		
+
 		/* If 4 or more widgets are displayed, show three across when available. */
-		.widget:nth-last-child(n+4), 
-		.widget:nth-last-child(n+4) ~ .widget { 
+		.widget:nth-last-child(n+4),
+		.widget:nth-last-child(n+4) ~ .widget {
 			width: 30%;
 			flex: 1 1 30%;
 		}
 	}
-	
-}
 
+}

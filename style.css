@@ -1588,6 +1588,13 @@ button.dropdown-toggle {
 	margin-top: 1.5em;
 }
 
+/* Footer widgets for archive pages */
+@media screen and (min-width: 900px) {
+	.archive-view.has-sidebar .footer-widgets {
+		width: 100%;
+	}
+}
+
 .widget {
 	margin: 0 0 2em;
 	padding: 0 0 2em;
