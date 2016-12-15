@@ -143,3 +143,19 @@ function humescores_post_navigation() {
 			'<span class="post-title">%title</span>',
 	) );
 }
+
+/**
+ * Customize ellipsis at end of excerpts.
+ */
+function humescores_excerpt_more( $more ) {
+	return "…";
+}
+add_filter( 'excerpt_more', 'humescores_excerpt_more' );
+
+/**
+ * Filter excerpt length to 100 words.
+ */
+function humescores_excerpt_length( $length ) {
+	return 100;
+}
+add_filter( 'excerpt_length', 'humescores_excerpt_length');
