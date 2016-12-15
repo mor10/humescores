@@ -65,7 +65,7 @@
 	}
 	
 	.menu-item-has-children,
-	.page-item-has-children {
+	.page_item_has_children {
 		min-width: 218px;
 	}
 	.menu-item-has-children > a,
@@ -97,9 +97,9 @@ button.dropdown-toggle {
 	border: 1px solid hsla(0, 0%, 100%, .3);
 }
 
-/* Toggle small menu and sub-menus on */
+/* Toggle small menu and children on */
 .toggled-on ul,
-.sub-menu.toggled-on {
+.children.toggled-on {
 	display: block;
 }
 
@@ -145,6 +145,7 @@ button.dropdown-toggle {
 		}
 		
 	}
+	
 }
 
 @media screen and (min-width: $query__medium) {
@@ -153,6 +154,14 @@ button.dropdown-toggle {
 		ul {
 			justify-content: flex-end;
 			padding-top: 0;
+			
+			/* If you want dropdowns to open on hover, uncomment this: */
+			/*
+			li:hover > ul,
+				li:focus > ul {
+				display: block;
+			}	
+			*/
 		}
 		
 	}
