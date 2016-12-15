@@ -31,7 +31,7 @@
 	if ( has_post_thumbnail() ) { ?>
 	<figure class="featured-image full-bleed">
 		<?php
-		the_post_thumbnail();
+		the_post_thumbnail('humescores-full-bleed');
 		?>
 	</figure><!-- .featured-image full-bleed -->
 	<?php } ?>
