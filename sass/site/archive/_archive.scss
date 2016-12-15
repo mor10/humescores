@@ -47,6 +47,32 @@
 	margin: -1em 0 2em;
 }
 
+/* For content-none.php */
+.search,
+.error-404 {
+	
+	.page-content {
+		margin-bottom: 2em;
+		padding: 1em 2em;
+		font-family: $font__sans;
+		color: white;
+		background: $color__interactive;
+	}
+	
+	input[type="search"] {
+		padding: .5em;
+	}
+	input[type="submit"] {
+		border-color: white;
+		color: white;
+		
+		&:focus,
+		&:hover {
+			color: black;
+		}
+	}
+}
+
 .sticky::before {
     content: "";
     display: block;

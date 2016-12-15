@@ -19,13 +19,16 @@ if ( have_posts() ) : ?>
 		?>
 	</header><!-- .page-header -->
 	
-<?php endif; ?>
+<?php 
+else :
+
+	get_template_part( 'template-parts/content', 'none' );
+	return;
+
+endif; ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-		<?php
-		if ( have_posts() ) : ?>
 
 			<?php
 			/* Start the Loop */
@@ -46,11 +49,7 @@ if ( have_posts() ) : ?>
 				'before_page_number' => '<span class="screen-reader-text">' . __( 'Page', 'humescores' ) . '</span>',
 			));
 
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif; ?>
+		?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
