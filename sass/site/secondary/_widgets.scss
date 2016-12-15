@@ -6,7 +6,7 @@
 	margin: 0 0 2em;
 	padding: 0 0 2em;
 	font-family: $font__sans;
-	
+
 	ul,
 	ol {
 		padding: .7em 0 0;
@@ -25,20 +25,20 @@
 					margin-left: 1em;
 				}
 			}
-			
+
 		}
 	}
-	
+
 	a {
 		font-weight: 600;
 		text-decoration: none;
-		
+
 		&:hover,
 		&:focus {
 			border-bottom: 3px solid $color__interactive;
 		}
 	}
-	
+
 	/* Make sure select elements fit in widgets. */
 	select {
 		width: 100%;
@@ -47,7 +47,7 @@
 		font-family: $font__sans;
 		border: 1px solid #ccc;
 	}
-	
+
 }
 
 .widget-title {
@@ -60,146 +60,3 @@
 .widget_archive li {
 	color: #7D7D7D;
 }
-
-.widget_categories .children {
-	padding-top: 0;
-}
-
-/* Search widget. */
-.widget_search .search-submit {
-	display: none;
-}
-
-/* Pages and Menu widgets */
-.widget_pages .children,
-.widget_nav_menu .sub-menu {
-	padding-top: 0;
-	padding-bottom: .5em;
-}
-
-.widget_pages,
-.widget_nav_menu {
-	
-	a {
-		display: block;
-		padding: 1em 0;
-		text-decoration: none;
-		border-bottom: 1px dashed hsl(0, 0%, 50%);
-		
-		&:hover,
-		&:focus {
-			text-decoration: none;
-			border-bottom: 1px dashed hsl(0, 0%, 50%);
-		}
-	}
-	
-	li {
-		padding: 0;
-
-	}
-	
-}
-
-
-/* Meta widget */
-.widget_meta li {
-	padding: 0;
-}
-
-/* Recent comments */
-.widget_recent_comments {
-
-	li {
-		line-height: 1.3em;
-		padding-bottom: .5em;
-	}
-	
-	a:hover,
-	a:focus {
-		padding-left: 0;
-	}
-	
-}
-
-/* RSS widget */
-.widget_rss li {
-	margin-bottom: 1em;
-}
-.widget li a.rsswidget {
-	padding-right: .5em;
-	font-size: 1em;
-	line-height: 1.4em;
-}
-
-.rss-date,
-.widget_rss cite {
-	color: #333;
-	font-size: .8em;
-}
-
-.rssSummary {
-	padding: .5em 0;
-	font-family: $font__serif;
-	font-size: .8em;
-    line-height: 1.4em;
-}
-
-/* Search widget */
-.widget_search input[type="search"] {
-	box-sizing: border-box;
-	width: 100%;
-	padding: .5em 1em;
-	border: 1px solid #c3c3c3;
-	border-radius: 0;
-}
-
-/* Calendar widget */
-.widget_calendar {
-	font-weight: 400;
-	
-	caption {
-		padding: .5em 0;
-		font-size: 1em;
-		font-weight: 500;
-		text-align: left;
-	}
-	
-	thead {
-		background: transparent;
-		color: black;
-		
-		th {
-			border-bottom-width: 2px;
-		}
-	}
-	
-	td {
-		padding: .2em;
-		font-size: .8em;
-		text-align: center;
-		background: white;
-		border: 1px solid hsl(0, 0%, 80%);
-	}
-	
-	th {
-		border: none;
-		text-align: center;
-	}
-	
-	.pad {
-		background: #eaeaea;
-	}
-	
-	a {
-		font-weight: 900;
-		text-decoration: none;
-	}
-	
-}
-
-/* Text widget */
-.textwidget {
-	font-size: 80%;
-	line-height: 1.3em;
-}
-
