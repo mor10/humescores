@@ -1224,7 +1224,7 @@ button.dropdown-toggle {
 
 /* Toggle small menu and children on */
 .toggled-on ul,
-.sub-menu.toggled-on {
+.children.toggled-on {
 	display: block;
 }
 
@@ -1276,7 +1276,7 @@ button.dropdown-toggle {
 			li:hover > ul,
 				li:focus > ul {
 				display: block;
-			}
+			}	
 			*/
 	}
 }
@@ -1746,13 +1746,6 @@ button.dropdown-toggle {
 --------------------------------------------------------------*/
 .widget-area {
 	margin-top: 1.5em;
-}
-
-/* Footer widgets for archive pages */
-@media screen and (min-width: 900px) {
-	.archive-view.has-sidebar .footer-widgets {
-		width: 100%;
-	}
 }
 
 .widget {
