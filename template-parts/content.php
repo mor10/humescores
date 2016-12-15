@@ -10,7 +10,19 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<div class="post__content">
+	
+	<?php
+	if ( has_post_thumbnail() ) { ?>
+	<figure class="featured-image index-image">
+		<a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark">
+			<?php
+			the_post_thumbnail('humescores-index-img');
+			?>
+		</a>
+	</figure><!-- .featured-image full-bleed -->
+	<?php } ?>
+	
+	<div class="post__content">
 		<header class="entry-header">
 			<?php humescores_the_category_list(); ?>
 			<?php

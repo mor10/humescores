@@ -899,6 +899,16 @@ a:hover, a:active {
 	}
 }
 
+.index-image img {
+	display: block;
+	margin: 0 auto;
+}
+
+.index-image a:focus > img,
+.index-image a:hover > img {
+	opacity: .8;
+}
+
 .continue-reading {
 	position: absolute;
 	right: 0;

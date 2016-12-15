@@ -30,6 +30,19 @@
 	}
 }
 
+.index-image {
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+	
+	a {
+		&:focus > img,
+		&:hover > img {
+			opacity: .8;
+		}
+	}
+}
 
 .continue-reading {
 	position: absolute;
