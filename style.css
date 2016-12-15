@@ -1204,16 +1204,8 @@ object {
 ## Captions
 --------------------------------------------------------------*/
 .wp-caption {
-	margin-bottom: 2em;
+	margin-bottom: 1.5em;
 	max-width: 100%;
-	font-family: "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
-	font-size: 90%;
-	color: #666666;
-	text-align: center;
-}
-
-.wp-caption a {
-	color: inherit;
 }
 
 .wp-caption img[class*="wp-image-"] {
@@ -1223,19 +1215,11 @@ object {
 }
 
 .wp-caption .wp-caption-text {
-	margin: .5em 0 1.5em 1em;
+	margin: 0.8075em 0;
 }
 
-@media screen and (min-width: 600px) {
-	.wp-caption .wp-caption-text {
-		margin-left: 2em;
-	}
-}
-
-@media screen and (min-width: 900px) {
-	.wp-caption .wp-caption-text {
-		margin-left: 0;
-	}
+.wp-caption-text {
+	text-align: center;
 }
 
 /*--------------------------------------------------------------
