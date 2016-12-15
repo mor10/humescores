@@ -36,3 +36,23 @@
 		
 	}
 }
+
+
+@media screen and (min-width: $query__medium) {
+	.no-sidebar {
+		
+		.post-content__wrap {
+			display: flex;
+			justify-content: space-between;
+			
+			.entry-meta {
+				width: 20%;
+			}
+
+			.post-content__body {
+				width: 70%;
+			}
+		}
+		
+	}
+}
