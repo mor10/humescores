@@ -5,3 +5,35 @@
 		padding: 2em;
 	}
 }
+
+/*
+.site-content {
+	max-width: $size__max-width;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: $query__medium) {
+	.has-sidebar {
+		
+		.hentry {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			
+			.entry-header {
+				width: 100%;
+				flex: 1 0 100%;
+			}
+			
+			.post-content {
+				width: $size__ratio-large;
+			}
+			
+			.widget-area {
+				width: $size__ratio-small;
+			}
+		}
+		
+	}
+}
+*/
