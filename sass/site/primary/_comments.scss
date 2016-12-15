@@ -241,3 +241,16 @@
 	}
 }
 
+.pingback {
+	font-family: $font__sans;
+	
+	.comment-body {
+		padding: 1em 0;
+	}
+	
+	a {
+		font-style: italic;
+		text-decoration: none;
+	}
+}
+
