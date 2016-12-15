@@ -30,6 +30,20 @@
 	}
 }
 
+.sticky::before {
+    content: "";
+    display: block;
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-width: 0 2em 2em 0;
+    border-color: #eee #eee white;
+    border-style: solid;
+    box-shadow: -1px 2px 2px hsla(0, 0%, 10%, .1);
+}
+
 .index-image {
 	img {
 		display: block;
