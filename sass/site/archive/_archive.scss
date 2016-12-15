@@ -18,6 +18,10 @@
 				flex-wrap: wrap;
 			}
 			
+			.page-header {
+				width: 100%;
+				flex: 1 0 100%;
+			}
 			.content-area {
 				width: $size__ratio-large;
 			}
@@ -28,6 +32,18 @@
 			
 		}
 	}
+}
+
+.page-header {
+	font-family: $font__sans;
+}
+
+.page-title {
+	margin: 0 0 .5em;
+}
+
+.archive-description {
+	margin: -1em 0 2em;
 }
 
 .sticky::before {

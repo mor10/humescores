@@ -926,12 +926,30 @@ a:hover, a:active {
 		-ms-flex-wrap: wrap;
 		    flex-wrap: wrap;
 	}
+	.archive-view.has-sidebar .page-header {
+		width: 100%;
+		-webkit-box-flex: 1;
+		    -ms-flex: 1 0 100%;
+		        flex: 1 0 100%;
+	}
 	.archive-view.has-sidebar .content-area {
 		width: 60%;
 	}
 	.archive-view.has-sidebar .widget-area {
 		width: 30%;
 	}
+}
+
+.page-header {
+	font-family: "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+}
+
+.page-title {
+	margin: 0 0 .5em;
+}
+
+.archive-description {
+	margin: -1em 0 2em;
 }
 
 .sticky::before {
