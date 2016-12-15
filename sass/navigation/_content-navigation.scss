@@ -91,3 +91,35 @@
 	}
 	
 } 
+
+.pagination {
+	
+	font-family: $font__sans;
+	
+	.nav-links {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	
+	a,
+	span {
+		padding: .5em 1em;
+		background: white;
+	}
+	
+	a {
+		text-decoration: none;
+		
+		&:focus,
+		&:hover {
+			color: white;
+			background: $color__interactive;
+		}
+	}
+	
+	.current {
+		font-weight: 600;
+		color: $color__interactive;
+	}
+}
