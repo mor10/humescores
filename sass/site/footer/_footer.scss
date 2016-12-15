@@ -6,12 +6,49 @@
 	background-color: $color__skin;
 	text-align: center;
 	
+	a {
+		font-weight: 700;
+		color: white;
+		text-decoration: none;
+		
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+	}
+	
 	@media screen and (min-width: $query__small) {
 		padding: 1em 2em;
+	}
+	
+}
+
+.site-footer__wrap {
+	max-width: $size__max-width;
+	margin: 0 auto;
+	
+	@media screen and (min-width: $query__medium) {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.site-info {
+	margin: 1em 0;
+	align-self: center;
+	
+	@media screen and (min-width: $query__medium) {
+		text-align: right;
+		
+		span {
+			display: block;
+			
+		}
 	}
 }
 
 .social-menu {
+	margin: 1em 0;
 	ul {
 		display: flex;
 		justify-content: center;
@@ -25,10 +62,12 @@
 			padding: .5em 1em;
 			color: white;
 			text-decoration: none;
+			opacity: .6;
 			
 			&:hover,
 			&:focus {
 				text-decoration: underline;
+				opacity: 1;
 			}
 		}
 	}
