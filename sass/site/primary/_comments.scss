@@ -188,3 +188,56 @@
 	margin-top: -5px;
 	margin-left: -5px;
 }
+
+/* Comment Form */
+
+
+.comment-reply-title {
+	margin-bottom: 1em;
+}
+
+.comment-list .comment-reply-title {
+	text-align: left;
+}
+
+.comment-form {
+	font-family: $font__sans;
+	line-height: 1.3em;
+	
+	a {
+		font-weight: 500;
+	}
+	
+	.form-submit {
+		text-align: right;
+	}
+	
+	.form-submit input {
+		padding: .5em 1.4em;
+		font-size: 85%;
+		color: #000;
+		line-height: 1.3em;
+		text-decoration: none;
+		border: 1px solid #c3c3c3;
+		
+		&:hover,
+		&:focus {
+			color: #fff;
+			background: $color__interactive;
+			border-color: $color__interactive;
+			
+		}
+	}
+	
+	label {
+		width: 33%;
+		display: block;
+		font-style: italic;
+		padding-bottom: .4em;
+	}
+	
+	.required {
+		color: #D54E21;
+	}
+}
+

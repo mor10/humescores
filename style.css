@@ -1441,6 +1441,54 @@ button.dropdown-toggle {
 	margin-left: -5px;
 }
 
+/* Comment Form */
+.comment-reply-title {
+	margin-bottom: 1em;
+}
+
+.comment-list .comment-reply-title {
+	text-align: left;
+}
+
+.comment-form {
+	font-family: "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+	line-height: 1.3em;
+}
+
+.comment-form a {
+	font-weight: 500;
+}
+
+.comment-form .form-submit {
+	text-align: right;
+}
+
+.comment-form .form-submit input {
+	padding: .5em 1.4em;
+	font-size: 85%;
+	color: #000;
+	line-height: 1.3em;
+	text-decoration: none;
+	border: 1px solid #c3c3c3;
+}
+
+.comment-form .form-submit input:hover, .comment-form .form-submit input:focus {
+	color: #fff;
+	background: #b51c35;
+	border-color: #b51c35;
+}
+
+.comment-form label {
+	width: 33%;
+	display: block;
+	font-style: italic;
+	padding-bottom: .4em;
+}
+
+.comment-form .required {
+	color: #D54E21;
+}
+
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
