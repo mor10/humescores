@@ -122,4 +122,12 @@
 		font-weight: 600;
 		color: $color__interactive;
 	}
+	
+	.prev .icon {
+		margin-right: 1em;
+	}
+	
+	.next .icon {
+		margin-left: 1em;
+	}
 }
