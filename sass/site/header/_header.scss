@@ -1,4 +1,4 @@
-/*
+
 .site-header {
 	position: relative;
 	padding: 1em;
@@ -39,4 +39,18 @@
 	font-style: italic;
 	font-weight: 100;
 }
-*/
+
+@media screen and (min-width: $query__medium) {
+	.site-header {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.site-branding {
+		width: 35%;
+	}
+	
+	.site-navigation {
+		width: 55%;
+	}
+}
