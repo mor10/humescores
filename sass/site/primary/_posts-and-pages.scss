@@ -6,6 +6,77 @@
 	margin: 0 0 1.5em;
 }
 
+.entry-header {
+	font-family: $font__sans;
+}
+
+.cat-links {
+	font-size: 90%;
+	font-weight: 700;
+	
+	a {
+		text-decoration: none;
+		text-transform: uppercase;
+		color: $color__interactive;
+		
+		&:focus,
+		&:hover {
+			background-color: $color__interactive;
+			color: white;
+		}
+	}
+}
+
+.entry-title {
+	margin: .125em 0 .25em;
+	font-size: 2.5em;
+	
+	@media screen and (min-width: $query__medium) {
+		font-size: 3em;
+	}
+	
+	a {
+		text-decoration: none;
+		color: black;
+		
+		&:focus,
+		&:hover {
+			border-bottom: 5px solid $color__interactive;
+		}
+	}
+}
+
+.entry-meta {
+	font-size: 90%;
+	
+	a {
+		font-weight: 700;
+		text-decoration: none;
+		color: black;
+		
+		&:focus,
+		&:hover {
+			color: black;
+			border-bottom: 3px solid $color__interactive;
+		}
+	}
+}
+
+.byline {
+	&::after {
+		content: "|";
+		margin: 0 .5em;
+	}
+}
+
+.comments-link,
+.edit-link {
+	&::before {
+		content: "|";
+		margin: 0 .5em;
+	}
+}
+
 .byline,
 .updated:not(.published){
 	display: none;
