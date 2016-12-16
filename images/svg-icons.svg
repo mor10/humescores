@@ -144,5 +144,11 @@
 <symbol id="icon-pause" viewBox="0 0 24 28">
 <path d="M24 3v22c0 0.547-0.453 1-1 1h-8c-0.547 0-1-0.453-1-1v-22c0-0.547 0.453-1 1-1h8c0.547 0 1 0.453 1 1zM10 3v22c0 0.547-0.453 1-1 1h-8c-0.547 0-1-0.453-1-1v-22c0-0.547 0.453-1 1-1h8c0.547 0 1 0.453 1 1z"></path>
 </symbol>
+<symbol id="icon-arrow-long-left" viewBox="0 0 20 20">
+<path d="M0.75 10l5.25-5.5v3.5h13v4h-13v3.5l-5.25-5.5z"></path>
+</symbol>
+<symbol id="icon-arrow-long-right" viewBox="0 0 20 20">
+<path d="M14 15.5v-3.5h-13v-4h13v-3.5l5.25 5.5-5.25 5.5z"></path>
+</symbol>
 </defs>
 </svg>
