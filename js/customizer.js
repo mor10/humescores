@@ -39,4 +39,13 @@
 			}
 		} );
 	} );
+
+	// Background color for header and footer.
+	wp.customize( 'theme_bg_color', function( value ) {
+		value.bind( function( to ) {
+			$( '.site-header, .site-footer' ).css( {
+				'background-color': to
+			} );
+		} );
+	} );
 } )( jQuery );
