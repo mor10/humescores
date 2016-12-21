@@ -14,10 +14,13 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		
+		<?php
+		// Make sure there is a social menu to display.
+		if ( has_nav_menu( 'social' ) ) { ?>
 		<nav class="social-menu">
 		<?php wp_nav_menu( array( 'theme_location' => 'social' ) ); ?>
 		</nav><!-- .social-menu -->
+		<?php } ?>
 		
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'humescores' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'humescores' ), 'WordPress' ); ?></a>
