@@ -5,28 +5,28 @@
 	color: #fff;
 	background-color: $color__skin;
 	text-align: center;
-	
+
 	a {
 		font-weight: 700;
 		color: white;
 		text-decoration: none;
-		
+
 		&:hover,
 		&:focus {
 			text-decoration: underline;
 		}
 	}
-	
+
 	@media screen and (min-width: $query__small) {
 		padding: 1em 2em;
 	}
-	
+
 }
 
 .site-footer__wrap {
 	max-width: $size__max-width;
 	margin: 0 auto;
-	
+
 	@media screen and (min-width: $query__medium) {
 		display: flex;
 		justify-content: space-between;
@@ -34,15 +34,15 @@
 }
 
 .site-info {
-	margin: 1em 0;
+	margin: 1em 0 1em auto;
 	align-self: center;
-	
+
 	@media screen and (min-width: $query__medium) {
 		text-align: right;
-		
+
 		span {
 			display: block;
-			
+
 		}
 	}
 }
@@ -56,14 +56,14 @@
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
-		
+
 		a {
 			display: block;
 			padding: .5em 1em;
 			color: white;
 			text-decoration: none;
 			opacity: .6;
-			
+
 			&:hover,
 			&:focus {
 				text-decoration: underline;
