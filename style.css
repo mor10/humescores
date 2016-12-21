@@ -1756,7 +1756,7 @@ button.dropdown-toggle {
 }
 
 .site-info {
-	margin: 1em 0;
+	margin: 1em 0 1em auto;
 	-ms-flex-item-align: center;
 	    -ms-grid-row-align: center;
 	    align-self: center;
