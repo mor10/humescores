@@ -1064,7 +1064,7 @@ button.dropdown-toggle {
 
 /* Toggle small menu and children on */
 .toggled-on ul,
-.children.toggled-on {
+.sub-menu.toggled-on {
 	display: block;
 }
 
@@ -1116,7 +1116,7 @@ button.dropdown-toggle {
 			li:hover > ul,
 				li:focus > ul {
 				display: block;
-			}	
+			}
 			*/
 	}
 }
