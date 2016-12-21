@@ -14,13 +14,18 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		
+		<?php
+		// Make sure there is a social menu to display.
+		if ( has_nav_menu( 'social' ) ) { ?>
 		<nav class="social-menu">
 		<?php wp_nav_menu( array( 'theme_location' => 'social' ) ); ?>
 		</nav><!-- .social-menu -->
-		
+		<?php } ?>
+
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'humescores' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'humescores' ), 'WordPress' ); ?></a>
+			<a href="<?php
+			// Make sure there is a social menu to display.
+			if ( has_nav_menu( 'social' ) ) { ?><?php echo esc_url( __( 'https://wordpress.org/', 'humescores' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'humescores' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
 			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'humescores' ), 'humescores', '<a href="https://mor10.com/courses" rel="designer">Morten Rand-Hendriksen</a>' ); ?>
 		</div><!-- .site-info -->
