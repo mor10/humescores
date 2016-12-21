@@ -67,14 +67,14 @@ function humescores_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
-	
+
 	// Add theme support for Custom Logo
 	add_theme_support( 'custom-logo', array(
 		'width' => 90,
 		'height' => 90,
 		'flex-width' => true,
 	));
-	
+
 }
 endif;
 add_action( 'after_setup_theme', 'humescores_setup' );
@@ -95,16 +95,16 @@ function humescores_fonts_url() {
 	$pt_serif = _x( 'on', 'PT Serif font: on or off', 'humescores' );
 
 	$font_families = array();
-	
+
 	if ( 'off' !== $source_sans_pro ) {
 		$font_families[] = 'Source Sans Pro:400,400i,700,900';
 	}
-	
+
 	if ( 'off' !== $pt_serif ) {
 		$font_families[] = 'PT Serif:400,400i,700,700i';
 	}
-	
-	
+
+
 	if ( in_array( 'on', array($source_sans_pro, $pt_serif) ) ) {
 
 		$query_args = array(
@@ -215,6 +215,8 @@ function humescores_post_thumbnail_sizes_attr( $attr, $attachment, $size ) {
 		} else {
 			$attr['sizes'] = '(max-width: 1000px) 90vw, 1000px';
 		}
+	} else {
+		$attr['sizes'] = '100vw';
 	}
 
 	return $attr;
@@ -239,7 +241,7 @@ function humescores_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
-	
+
 	register_sidebar( array(
 		'name'          => esc_html__( 'Page Sidebar', 'humescores' ),
 		'id'            => 'sidebar-2',
@@ -249,7 +251,7 @@ function humescores_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
-	
+
 	register_sidebar( array(
 		'name'          => esc_html__( 'Footer Widgets', 'humescores' ),
 		'id'            => 'footer-1',
@@ -259,7 +261,7 @@ function humescores_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
-	
+
 }
 add_action( 'widgets_init', 'humescores_widgets_init' );
 
@@ -269,7 +271,7 @@ add_action( 'widgets_init', 'humescores_widgets_init' );
 function humescores_scripts() {
 	// Enqueue Google Fonts: Source Sans Pro and PT Serif
 	wp_enqueue_style( 'humescores-fonts', humescores_fonts_url() );
-	
+
 	wp_enqueue_style( 'humescores-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'humescores-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20151215', true );
@@ -279,7 +281,7 @@ function humescores_scripts() {
 	));
 
 	wp_enqueue_script( 'humescores-functions', get_template_directory_uri() . '/js/functions.js', array('jquery'), '20161201', true );
-	
+
 	wp_enqueue_script( 'humescores-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
