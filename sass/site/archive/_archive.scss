@@ -1,14 +1,15 @@
 .archive-view {
 	background-color: #eee;
-	
+
 	.post {
+		position: relative;
 		background: white;
 	}
-	
+
 	.post__content {
 		padding: 2em 2em 3em;
 	}
-	
+
 	@media screen and (min-width: $query__medium) {
 		&.has-sidebar {
 			.site-content {
@@ -16,15 +17,39 @@
 				justify-content: space-between;
 				flex-wrap: wrap;
 			}
-			
+
 			.content-area {
 				width: $size__ratio-large;
 			}
-			
+
 			.widget-area {
 				width: $size__ratio-small;
 			}
-			
+
 		}
 	}
 }
+
+/*
+.continue-reading {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-family: $font__sans;
+
+	a {
+		display: block;
+		padding: .5em 1em;
+		font-size: 90%;
+		text-decoration: none;
+		background: hsl(0, 0%, 85%);
+
+		&:focus,
+		&:hover {
+			color: white;
+			background: $color__interactive;
+		}
+	}
+
+}
+*/
