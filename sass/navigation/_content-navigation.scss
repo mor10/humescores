@@ -6,7 +6,7 @@
 	font-family: $font__sans;
 	text-align: left;
 	overflow: hidden;
-	
+
 	a {
 		display: block;
 		width: 100%;
@@ -14,7 +14,7 @@
 		padding: 1em;
 		border: 1px solid hsl(0, 0%, 80%);
 		color: black;
-		
+
 		&:hover,
 		&:focus {
 			color: white;
@@ -22,7 +22,7 @@
 			background: $color__interactive;
 		}
 	}
-	
+
 }
 
 
@@ -47,7 +47,7 @@
 	.comment-navigation,
 	.posts-navigation,
 	.post-navigation {
-		
+
 		.nav-previous,
 		.nav-next {
 			float: left;
@@ -55,7 +55,7 @@
 			align-items: stretch;
 			width: 48%;
 		}
-		
+
 		.nav-next {
 			float: right;
 			text-align: right;
@@ -70,24 +70,57 @@
 }
 
 .post-navigation {
-	
+
 	.meta-nav {
 		display: block;
 	}
-	
+
 	@media screen and (min-width: 30em) {
 		padding-bottom: 1em;
 	}
-	
+
 	.post-title {
 		font-size: 1.2em;
 		font-weight: 700;
 		border-bottom: 3px solid $color__interactive;
 	}
-	
+
 	a:hover .post-title,
 	a:focus .post-title{
 		border-bottom-color: white;
 	}
-	
-} 
+
+}
+/*
+.pagination {
+
+	font-family: $font__sans;
+
+	.nav-links {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	a,
+	span {
+		padding: .5em 1em;
+		background: white;
+	}
+
+	a {
+		text-decoration: none;
+
+		&:focus,
+		&:hover {
+			color: white;
+			background: $color__interactive;
+		}
+	}
+
+	.current {
+		font-weight: 600;
+		color: $color__interactive;
+	}
+}
+*/
