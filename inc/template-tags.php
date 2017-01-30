@@ -35,14 +35,14 @@ function humescores_posted_on() {
 	);
 
 	echo '<span class="byline"> ' . $byline . '</span> <span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
-	
+
 	if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		echo ' <span class="comments-link">';
 		/* translators: %s: post title */
 		comments_popup_link( sprintf( wp_kses( __( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'humescores' ), array( 'span' => array( 'class' => array() ) ) ), get_the_title() ) );
 		echo '</span>';
 	}
-	
+
 	edit_post_link(
 		sprintf(
 			/* translators: %s: Name of current post */
@@ -128,3 +128,18 @@ function humescores_category_transient_flusher() {
 }
 add_action( 'edit_category', 'humescores_category_transient_flusher' );
 add_action( 'save_post',     'humescores_category_transient_flusher' );
+
+
+/**
+ * Post navigation (previous / next post) for single posts.
+ */
+function humescores_post_navigation() {
+	the_post_navigation( array(
+		'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'humescores' ) . '</span> ' .
+			'<span class="screen-reader-text">' . __( 'Next post:', 'humescores' ) . '</span> ' .
+			'<span class="post-title">%title</span>',
+		'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'humescores' ) . '</span> ' .
+			'<span class="screen-reader-text">' . __( 'Previous post:', 'humescores' ) . '</span> ' .
+			'<span class="post-title">%title</span>',
+	) );
+}
