@@ -1,0 +1,93 @@
+.comment-navigation,
+.posts-navigation,
+.post-navigation,
+.paging-navigation {
+	padding: 2em 0;
+	font-family: $font__sans;
+	text-align: left;
+	overflow: hidden;
+	
+	a {
+		display: block;
+		width: 100%;
+		text-decoration: none;
+		padding: 1em;
+		border: 1px solid hsl(0, 0%, 80%);
+		color: black;
+		
+		&:hover,
+		&:focus {
+			color: white;
+			border-color: $color__interactive;
+			background: $color__interactive;
+		}
+	}
+	
+}
+
+
+.nav-links {
+	margin: 0 auto;
+	padding: 0 .4em;
+}
+
+.nav-previous {
+	padding-bottom: 1em;
+}
+
+@media screen and (min-width: $query__medium) {
+
+	.nav-links {
+		display: flex;
+		justify-content: space-between;
+		align-items: stretch;
+		padding: 0;
+	}
+
+	.comment-navigation,
+	.posts-navigation,
+	.post-navigation {
+		
+		.nav-previous,
+		.nav-next {
+			float: left;
+			display: flex;
+			align-items: stretch;
+			width: 48%;
+		}
+		
+		.nav-next {
+			float: right;
+			text-align: right;
+		}
+	}
+
+	.nav-previous {
+		padding-bottom: 0;
+	}
+
+
+}
+
+.post-navigation {
+	
+	.meta-nav {
+		display: block;
+	}
+	
+	@media screen and (min-width: 30em) {
+		padding-bottom: 1em;
+	}
+	
+	.post-title {
+		font-size: 1.2em;
+		font-weight: 700;
+		border-bottom: 3px solid $color__interactive;
+	}
+	
+	a:hover .post-title,
+	a:focus .post-title{
+		border-bottom-color: white;
+	}
+	
+} 
