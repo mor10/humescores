@@ -1,6 +1,184 @@
-.comment-content a {
-	word-wrap: break-word;
+.comments-area {
+	width: 100%;
+	margin: 3em 0;
+	padding: 1.5em 0;
+	border-top: 1px solid hsl(0, 0%, 80%);
 }
-.bypostauthor {
-	display: block;
+
+.comments-title {
+	margin-bottom: 2em;
+	font-size: 2.5em;
+	font-weight: 900;
 }
+
+.comment-list {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+
+	ol {
+		list-style-type: none;
+	}
+}
+
+.comment-body {
+	border-bottom: 1px solid #c3c3c3;
+	margin-bottom: 3em;
+}
+
+.comment-meta {
+	position: relative;
+	margin-left: 70px;
+	font-family: $font__sans;
+	font-size: 80%;
+}
+
+.comment-meta,
+.comment-form {
+	a {
+		text-decoration: none;
+		border: none;
+
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+	}
+}
+
+.comment {
+
+	.avatar {
+		position: absolute;
+		top: -5px;
+		left: -70px;
+		width: 50px;
+		height: 50px;
+		border-radius: 50px;
+	}
+
+}
+
+.children {
+	margin-left: 1em;
+	padding-left: 0;
+
+	@media screen and (min-width: $query__medium) {
+		margin-left: 2em;
+	}
+}
+
+.no-sidebar {
+
+	.children {
+
+		@media screen and (min-width: $query__medium) {
+
+			margin-left: 2em;
+
+			.comment-meta {
+				margin-left: 80px;
+				font-size: 90%;
+			}
+
+			.comment .avatar {
+				top: -7px;
+				left: -80px;
+				width: 60px;
+				height: 60px;
+			}
+
+			.comment-content {
+				margin-left: 80px;
+			}
+
+		}
+	}
+
+
+	@media screen and (min-width: $size__max-width) {
+
+		.children {
+			margin-left: 3em;
+		}
+
+		.comment-meta {
+			margin-left: 90px;
+		}
+
+		.comment .avatar {
+			top: -8px;
+			left: -90px;
+			width: 70px;
+			height: 70px;
+		}
+
+		.comment-content {
+			margin-left: 90px;
+		}
+	}
+}
+
+
+
+.comment-metadata {
+    margin-top: .2em;
+	padding-bottom: .5em;
+	font-size: .8em;
+	line-height: 1em;
+
+	a {
+		color: #7D7D7D;
+
+		&:hover,
+		&:focus {
+			border-color: #c3c3c3;
+		}
+	}
+}
+
+.comment-author {
+	font-size: 1.4em;
+	line-height: 1.3em;
+}
+
+.says {
+	font-size: 80%;
+}
+
+.reply {
+	margin-bottom: 1.5em;
+	text-align: right;
+
+	a {
+		display: inline-block;
+		padding: .5em 1.4em;
+		font-family: $font__sans;
+		font-size: 85%;
+		color: #000;
+		line-height: 1.3em;
+		text-decoration: none;
+		border: 1px solid #c3c3c3;
+
+		&:hover,
+		&:focus {
+			color: #fff;
+			background: $color__interactive;
+			border-color: $color__interactive;
+		}
+	}
+}
+
+
+.comment-content {
+
+	ol {
+		list-style-type: decimal;
+	}
+
+	a {
+		word-wrap: break-word;
+	}
+
+}
+
