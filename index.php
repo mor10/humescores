@@ -42,11 +42,11 @@ get_header(); ?>
 			endwhile;
 
 			the_posts_pagination( array(
-				'prev_text' => __( 'Older', 'humescores' ),
-				'next_text' => __( 'Newer', 'humescores' ),
-				'before_page_number' => '<span class="screen-reader-text">' . __( 'Page', 'humescores' ) . '</span>',
+				'prev_text' => __( 'Newer', 'humescores' ),
+				'next_text' => __( 'Older', 'humescores' ),
+				'before_page_number' => '<span class="screen-reader-text">' . __( 'Page ', 'humescores' ) . '</span>',
 			));
-			
+
 		?>
 
 		</main><!-- #main -->
@@ -62,4 +62,4 @@ else :
 	get_template_part( 'template-parts/content', 'none' );
 	return;
 
-endif; 
+endif;
