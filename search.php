@@ -16,7 +16,7 @@ if ( have_posts() ) : ?>
 		<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'humescores' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 	</header><!-- .page-header -->
 
-<?php 
+<?php
 else :
 
 	get_template_part( 'template-parts/content', 'none' );
@@ -41,9 +41,9 @@ endif; ?>
 		endwhile;
 
 		the_posts_pagination( array(
-			'prev_text' => __( 'Previous', 'humescores' ),
-			'next_text' => __( 'Next', 'humescores' ),
-			'before_page_number' => '<span class="screen-reader-text">' . __( 'Page', 'humescores' ) . '</span>',
+			'prev_text' => humescores_get_svg( array( 'icon' => 'arrow-left' ) ) . __( 'Newer', 'humescores' ),
+			'next_text' => __( 'Older', 'humescores' ) . humescores_get_svg( array( 'icon' => 'arrow-right' ) ),
+			'before_page_number' => '<span class="screen-reader-text">' . __( 'Page ', 'humescores' ) . '</span>',
 		));
 
 		?>
