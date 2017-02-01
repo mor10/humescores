@@ -18,8 +18,8 @@ if ( have_posts() ) : ?>
 			the_archive_description( '<div class="archive-description">', '</div>' );
 		?>
 	</header><!-- .page-header -->
-	
-<?php 
+
+<?php
 else :
 
 	get_template_part( 'template-parts/content', 'none' );
@@ -44,8 +44,8 @@ endif; ?>
 			endwhile;
 
 			the_posts_pagination( array(
-				'prev_text' => __( 'Previous', 'humescores' ),
-				'next_text' => __( 'Next', 'humescores' ),
+				'prev_text' => humescores_get_svg( array( 'icon' => 'arrow-long-left' ) ) . __( 'Newer', 'humescores' ),
+				'next_text' => __( 'Older', 'humescores' ) . humescores_get_svg( array( 'icon' => 'arrow-long-right' ) ),
 				'before_page_number' => '<span class="screen-reader-text">' . __( 'Page', 'humescores' ) . '</span>',
 			));
 
