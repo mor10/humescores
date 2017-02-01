@@ -18,7 +18,7 @@ if ( have_posts() ) : ?>
 			the_archive_description( '<div class="archive-description">', '</div>' );
 		?>
 	</header><!-- .page-header -->
-	
+
 <?php endif; ?>
 
 	<div id="primary" class="content-area">
@@ -41,9 +41,9 @@ if ( have_posts() ) : ?>
 			endwhile;
 
 			the_posts_pagination( array(
-				'prev_text' => __( 'Previous', 'humescores' ),
-				'next_text' => __( 'Next', 'humescores' ),
-				'before_page_number' => '<span class="screen-reader-text">' . __( 'Page', 'humescores' ) . '</span>',
+				'prev_text' => __( 'Newer', 'humescores' ),
+				'next_text' => __( 'Older', 'humescores' ),
+				'before_page_number' => '<span class="screen-reader-text">' . __( 'Page ', 'humescores' ) . '</span>',
 			));
 
 		else :
