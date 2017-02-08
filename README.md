@@ -1,4 +1,4 @@
-:warning: # IMPORTANT :warning:
+# :warning: IMPORTANT :warning:
 Download the Exercise Files from the course page to get the Gulp process files and other important data. This repository only contains the theme itself.
 
 # Humescores
