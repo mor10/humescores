@@ -1,3 +1,6 @@
+:warning: # IMPORTANT :warning:
+Download the Exercise Files from the course page to get the Gulp process files and other important data. This repository only contains the theme itself.
+
 # Humescores
 Built for the LinkedIn Learning and Lynda.com course WordPress: Building Themes From Scratch Using Underscores, Humescores is an accessible content-first theme built around beautiful fonts and large images designed and developed by [Morten Rand-Hendriksen](http://mor10.com) for [LinkedIn Learning](https://www.linkedin.com/learning/instructors/725535) and [Lynda.com - a LinkedIn Company](https://lynda.com/mor10).
 ## Features
