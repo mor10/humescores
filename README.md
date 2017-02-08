@@ -27,4 +27,4 @@ Humescores is distributed under the terms of the GNU GPL v2
 Humescores' code base started out as _s (http://underscores.me) as it were on November 28, 2016.
 
 ### Namesake
-Popperscores is named after philosopher David Hume.
+Hume is named after philosopher David Hume.
