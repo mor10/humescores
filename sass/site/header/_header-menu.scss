@@ -99,6 +99,7 @@ button.dropdown-toggle {
 
 /* Toggle small menu and children on */
 .toggled-on ul,
+ul.children.toggled-on,
 .sub-menu.toggled-on {
 	display: block;
 }
